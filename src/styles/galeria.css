@@ -1,0 +1,345 @@
+/* =============================================
+   GALERIA.CSS — Galería de Imágenes
+   Paleta: #fff8f2 / #151515 / #ff4d7d / #22d6c5
+   ============================================= */
+
+.galeria-page {
+  padding: 0 0 3rem;
+}
+
+/* ── Header ── */
+.galeria-header {
+  margin-bottom: 2rem;
+  border-left: 4px solid #ff4d7d;
+  padding-left: 1rem;
+}
+
+.galeria-tag {
+  font-size: 0.8rem;
+  color: #ff4d7d;
+  font-family: monospace;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+
+.galeria-titulo {
+  font-size: 1.8rem;
+  color: #151515;
+  margin-bottom: 0.3rem;
+}
+
+.galeria-subtitulo {
+  font-size: 0.88rem;
+  color: #888;
+}
+
+/* ── Filtros ── */
+.galeria-filtros {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.8rem;
+}
+
+.filtro-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 99px;
+  border: 2px solid #e0d8d0;
+  background: #fff;
+  color: #555;
+  font-size: 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.filtro-btn:hover {
+  border-color: #ff4d7d;
+  color: #ff4d7d;
+  transform: translateY(-2px);
+}
+
+.filtro-btn.activo {
+  background: #151515;
+  border-color: #151515;
+  color: #fff;
+}
+
+.filtro-count {
+  background: rgba(255,255,255,0.2);
+  padding: 0.1rem 0.45rem;
+  border-radius: 99px;
+  font-size: 0.75rem;
+}
+
+.filtro-btn.activo .filtro-count {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ── Grid ── */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.8rem;
+}
+
+.galeria-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #f0e8e0;
+}
+
+.galeria-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.galeria-item:hover .galeria-thumb {
+  transform: scale(1.08);
+}
+
+/* Overlay hover */
+.galeria-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(21, 21, 21, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.galeria-item:hover .galeria-overlay {
+  opacity: 1;
+}
+
+.galeria-overlay-titulo {
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.galeria-overlay-cat {
+  color: #22d6c5;
+  font-size: 0.72rem;
+  font-family: monospace;
+}
+
+.galeria-overlay-zoom {
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+}
+
+/* ══════════════════════════════════════════
+   LIGHTBOX
+   ══════════════════════════════════════════ */
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: lbFadeIn 0.2s ease;
+}
+
+@keyframes lbFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.lightbox-box {
+  position: relative;
+  width: 90vw;
+  max-width: 960px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: #1a1a1a;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.8);
+  animation: lbSlideUp 0.25s ease;
+}
+
+@keyframes lbSlideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* Header del lightbox */
+.lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.2rem;
+  background: #111;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+
+.lightbox-titulo {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.lightbox-controles {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lb-btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lb-btn:hover:not(:disabled) {
+  background: #ff4d7d;
+  border-color: #ff4d7d;
+}
+
+.lb-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.lb-cerrar {
+  margin-left: 0.4rem;
+  background: rgba(255, 77, 125, 0.15);
+  border-color: rgba(255, 77, 125, 0.3);
+}
+
+.lb-cerrar:hover {
+  background: #ff4d7d !important;
+}
+
+.lb-zoom-pct {
+  color: #22d6c5;
+  font-size: 0.8rem;
+  font-weight: bold;
+  min-width: 42px;
+  text-align: center;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+/* Imagen */
+.lightbox-img-wrap {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+/* Navegación lateral */
+.lb-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.08);
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  width: 48px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  z-index: 10;
+  line-height: 1;
+}
+
+.lb-nav:hover {
+  background: #ff4d7d;
+}
+
+.lb-nav-prev {
+  left: 0.8rem;
+}
+
+.lb-nav-prev:hover {
+  transform: translateY(-50%) translateX(-2px);
+}
+
+.lb-nav-next {
+  right: 0.8rem;
+}
+
+.lb-nav-next:hover {
+  transform: translateY(-50%) translateX(2px);
+}
+
+/* Footer */
+.lightbox-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.2rem;
+  background: #111;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+
+.lb-categoria {
+  font-size: 0.75rem;
+  color: #22d6c5;
+  font-family: monospace;
+  background: rgba(34, 214, 197, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.lb-contador {
+  font-size: 0.82rem;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.lb-hint {
+  font-size: 0.7rem;
+  color: #555;
+}
