@@ -122,7 +122,17 @@
 }
 
 .social-icono {
-  font-size: 1rem;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.2s, filter 0.2s;
+  filter: brightness(0) invert(1);
+}
+
+.social-btn:hover .social-icono {
+  transform: scale(1.15);
+  filter: brightness(0) invert(1);
 }
 
 .social-nombre {
@@ -799,13 +809,17 @@
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
-.tech-emoji {
-  font-size: 2rem;
-  transition: transform 0.25s;
+.tech-svg {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.25s, filter 0.25s;
+  filter: grayscale(40%) opacity(0.7);
 }
 
-.tech-icon:hover .tech-emoji {
+.tech-icon:hover .tech-svg {
   transform: scale(1.25) rotate(-8deg);
+  filter: grayscale(0%) opacity(1);
 }
 
 .tech-nombre {
@@ -882,4 +896,213 @@
 .tech-icon:hover .tech-tooltip {
   opacity: 1;
   transform: translateX(-50%) scale(1);
+}
+
+/* ══════════════════════════════════════════
+   SOBRE MÍ — ENRIQUECIDO
+   ══════════════════════════════════════════ */
+
+.sobre-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.sobre-bloque {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Frase motivacional ── */
+.luis-quote {
+  position: relative;
+  background: #151515;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.8rem 2rem 1.8rem 3.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0;
+}
+
+.luis-quote-mark {
+  position: absolute;
+  top: 0.2rem;
+  left: 1rem;
+  font-size: 4rem;
+  color: #ff4d7d;
+  line-height: 1;
+  font-style: normal;
+}
+
+.luis-quote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  color: #22d6c5;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* ── Tarjetas datos personales ── */
+.datos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
+.dato-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: #fff;
+  border: 2px solid #f0e8e0;
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.dato-card:hover {
+  border-color: #22d6c5;
+  transform: translateY(-2px);
+}
+
+.dato-icono {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: opacity(0.6);
+}
+
+.dato-label {
+  font-size: 0.72rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.15rem;
+}
+
+.dato-valor {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #151515;
+}
+
+/* ── Timeline ── */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #f0e8e0;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 1.5rem 1.5rem;
+}
+
+.timeline-punto {
+  position: absolute;
+  left: -1.5rem;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #f0e8e0;
+  border: 2px solid #fff;
+  transition: background 0.2s;
+}
+
+.timeline-item.activo .timeline-punto {
+  background: #ff4d7d;
+  box-shadow: 0 0 0 4px rgba(255, 77, 125, 0.15);
+}
+
+.timeline-anio {
+  font-size: 0.72rem;
+  font-weight: bold;
+  color: #22d6c5;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.timeline-titulo {
+  font-size: 0.92rem;
+  font-weight: bold;
+  color: #151515;
+  margin: 0.2rem 0 0.1rem;
+}
+
+.timeline-lugar {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.timeline-item.activo .timeline-titulo {
+  color: #ff4d7d;
+}
+
+/* ── Hobbies grid ── */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.hobby-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.3rem 1rem;
+  background: #fff;
+  border: 2px solid #f0e8e0;
+  border-radius: 12px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+
+.hobby-card:hover {
+  border-color: #ff4d7d;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 77, 125, 0.1);
+}
+
+.hobby-icono {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.25s;
+  filter: opacity(0.7);
+}
+
+.hobby-card:hover .hobby-icono {
+  transform: scale(1.2) rotate(-5deg);
+  filter: opacity(1);
+}
+
+.hobby-texto {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #151515;
+}
+
+.hobby-desc {
+  font-size: 0.73rem;
+  color: #aaa;
+  line-height: 1.4;
 }
