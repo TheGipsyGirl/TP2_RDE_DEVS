@@ -1,0 +1,209 @@
+.valeria-page{
+    color:#151515;
+}
+
+/* HERO */
+
+.valeria-hero{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:3rem;
+    align-items:center;
+    margin-bottom:5rem;
+}
+
+.valeria-hero img{
+    width:100%;
+    border-radius:2rem;
+    object-fit:cover;
+    box-shadow:0 1rem 2rem rgba(0,0,0,.12);
+}
+
+.hero-info h1{
+    font-size:3rem;
+    margin-bottom:.5rem;
+}
+
+.nickname{
+    display:inline-block;
+    margin-bottom:1.5rem;
+    color:#ff4d7d;
+    font-weight:700;
+    font-size:1.1rem;
+}
+
+.hero-info p{
+    max-width:700px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:2rem;
+}
+
+/* SOCIALS */
+
+.socials{
+    display:flex;
+    gap:1rem;
+}
+
+.socials a{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#151515;
+    color:white;
+    font-size:1.4rem;
+    transition:.3s ease;
+    text-decoration:none;
+}
+
+.socials a:hover{
+    background:#ff4d7d;
+    transform:translateY(-5px);
+}
+
+/* SKILLS */
+
+.skills-section{
+    margin-bottom:5rem;
+}
+
+.skills-section h2{
+    margin-bottom:2rem;
+    font-size:2rem;
+}
+
+.skill{
+    margin-bottom:1.5rem;
+}
+
+.skill p{
+    margin-bottom:.5rem;
+    font-weight:700;
+}
+
+.bar{
+    width:100%;
+    height:16px;
+    background:#ddd;
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.progress{
+    height:100%;
+    border-radius:999px;
+    background:linear-gradient(
+        90deg,
+        #ff4d7d,
+        #22d6c5
+    );
+}
+
+.html{
+    width:95%;
+}
+
+.css{
+    width:90%;
+}
+
+.js{
+    width:75%;
+}
+
+.react{
+    width:70%;
+}
+
+/* TECH STACK */
+
+.tech-stack{
+    margin-bottom:5rem;
+}
+
+.tech-stack h2{
+    margin-bottom:2rem;
+    font-size:2rem;
+}
+
+.icons{
+    display:flex;
+    gap:2rem;
+    flex-wrap:wrap;
+}
+
+.icons svg{
+    font-size:4rem;
+    color:#151515;
+    transition:.3s ease;
+}
+
+.icons svg:hover{
+    color:#ff4d7d;
+    transform:translateY(-8px) rotate(-5deg);
+}
+
+/* PROJECTS */
+
+.projects-section h2{
+    margin-bottom:2rem;
+    font-size:2rem;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:2rem;
+}
+
+.project-card{
+    background:white;
+    border-radius:2rem;
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,.08);
+    transition:.4s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:1.2rem 1.2rem .5rem;
+    color:#151515;
+}
+
+.project-card p{
+    padding:0 1.2rem 1.5rem;
+    color:#666;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .valeria-hero{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .socials{
+        justify-content:center;
+    }
+
+    .hero-info h1{
+        font-size:2.3rem;
+    }
+
+}
