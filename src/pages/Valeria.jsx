@@ -39,6 +39,16 @@ const proyectos = [
 
 function Valeria() {
   const [proyectoActual, setProyectoActual] = useState(0);
+  const [menuAbierto, setMenuAbierto] = useState(false);
+
+const seccionesPerfil = [
+  { id: "valeria-sobre", label: "Sobre mí" },
+  { id: "valeria-skills", label: "Habilidades" },
+  { id: "valeria-stack", label: "Tech Stack" },
+  { id: "valeria-proyectos", label: "Proyectos" },
+  { id: "valeria-peliculas", label: "Películas" },
+  { id: "valeria-musica", label: "Música" },
+];
 
   const siguienteProyecto = () => {
     setProyectoActual((prev) => (prev + 1) % proyectos.length);
@@ -49,9 +59,35 @@ function Valeria() {
   };
 
   const proyecto = proyectos[proyectoActual];
+  
 
   return (
     <section className="valeria-page">
+      <div className="valeria-profile-nav">
+  <div className="valeria-nav-title">
+    <span></span>
+    <small></small>
+  </div>
+
+  <button
+    className="valeria-menu-btn"
+    onClick={() => setMenuAbierto(!menuAbierto)}
+  >
+    {menuAbierto ? "✕" : "☰"}
+  </button>
+
+  <nav className={`valeria-nav-links ${menuAbierto ? "open" : ""}`}>
+    {seccionesPerfil.map((seccion) => (
+      <a
+        key={seccion.id}
+        href={`#${seccion.id}`}
+        onClick={() => setMenuAbierto(false)}
+      >
+        {seccion.label}
+      </a>
+    ))}
+  </nav>
+</div>
       <div className="valeria-hero fade-up">
         <div className="hero-avatar">
           <span className="blob"></span>
@@ -83,7 +119,7 @@ function Valeria() {
         </div>
       </div>
 
-      <div className="valeria-grid">
+      <div className="valeria-grid" id="valeria-sobre">
         <article className="profile-card fade-up">
           <h2>Sobre mí</h2>
           <p>
@@ -106,7 +142,7 @@ function Valeria() {
         </article>
       </div>
 
-      <section className="skills-section fade-up">
+      <section className="skills-section fade-up" id="valeria-skills">
         <h2>Habilidades</h2>
 
         <div className="skill">
@@ -130,7 +166,7 @@ function Valeria() {
         </div>
       </section>
 
-      <section className="tech-stack fade-up">
+      <section className="tech-stack fade-up" id="valeria-stack">
         <h2>Tech Stack</h2>
 
         <div className="icons">
@@ -144,7 +180,7 @@ function Valeria() {
         </div>
       </section>
 
-      <section className="projects-section fade-up">
+      <section className="projects-section fade-up" id="valeria-proyectos">
         <h2>Proyectos</h2>
 
         <div className="carousel">
@@ -170,7 +206,7 @@ function Valeria() {
         </p>
       </section>
 
-      <section className="gustos-section fade-up">
+      <section className="gustos-section fade-up" id="valeria-peliculas">
         <h2>Películas favoritas</h2>
 
         <div className="movies-grid">
@@ -194,7 +230,7 @@ function Valeria() {
         </div>
       </section>
 
-      <section className="music-section fade-up">
+      <section className="music-section fade-up" id="valeria-musica">
         <h2>Discos favoritos</h2>
 
         <div className="vinyl-grid">

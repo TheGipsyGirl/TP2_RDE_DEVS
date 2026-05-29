@@ -31,7 +31,7 @@ const integrantes = [
     rol: "Frontend · API Integration",
     descripcion:
       "Programador enfocado en integración de APIs, galería interactiva y funcionalidades dinámicas.",
-    imagen: "/integrantes/luis/perfil.jpg",
+    imagen: "/public/img/img_luis/FOTO_PERFIL.jpg",
     ruta: "/luis",
   },
 ];
