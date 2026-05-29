@@ -1,127 +1,103 @@
-import "../styles/home.css";
 import { Link } from "react-router-dom";
+import "../styles/home.css";
+
+const integrantes = [
+  {
+    nombre: "Valeria Natucci",
+    rol: "Frontend creativa · Diseño Web",
+    descripcion:
+      "Desarrolladora enfocada en identidad visual, interfaces modernas y experiencias digitales con personalidad.",
+    imagen: "/public/img/valeria/perfil.jpg",
+    ruta: "/valeria",
+  },
+  {
+    nombre: "Agustina Brandemann",
+    rol: "Frontend Developer",
+    descripcion:
+      "Desarrolladora enfocada en el desarrollo de interfaces y experiencia de usuario.",
+    imagen: "/integrantes/agustina/perfil.jpg",
+    ruta: "/agustina",
+  },
+  {
+    nombre: "Matías Gonzalez",
+    rol: "React Developer",
+    descripcion:
+      "Programador orientado a lógica, componentes dinámicos y manejo de datos en React.",
+    imagen: "/integrantes/matias/perfil.jpg",
+    ruta: "/matias",
+  },
+  {
+    nombre: "Luis Specterman",
+    rol: "Frontend · API Integration",
+    descripcion:
+      "Programador enfocado en integración de APIs, galería interactiva y funcionalidades dinámicas.",
+    imagen: "/integrantes/luis/perfil.jpg",
+    ruta: "/luis",
+  },
+];
 
 function Home() {
   return (
-
-    <section className="home">
-
-      <div className="home-header">
+    <section className="home-page">
+      <div className="home-hero">
+        <p className="home-eyebrow">IFTS N° 29 - 2° AÑO - FRONT END - PROF. MARTINEZ </p>
 
         <h1>
-          Bienvenidos a <span>Rulos de Estatua Developers</span>
+          Bienvenidos a <span>RDE Devs</span>
         </h1>
 
         <p>
-          GRUPO 1.
-          Un dashboard desarrollado en React donde cada integrante
-          representa una identidad visual única dentro del ecosistema digital.
+          Dashboard desarrollado con React, React Router y componentes
+          reutilizables. 
+          Este proyecto representa la evolución del TP1 hacia una
+          arquitectura moderna basada en componentes.
         </p>
-
       </div>
 
-      <div className="cards-grid">
-
-        <article className="member-card">
-
-          <img
-            src="public/valeria/perfil.jpg"
-            alt="Valeria"
-          />
-
-          <div className="card-content">
-
-            <h2>Valeria Natucci</h2>
-
-            <p>
-              Frontend developer creativa enfocada en diseño web,
-              experiencias visuales modernas y branding digital.
-            </p>
-
-            <Link className="card-btn" to="/valeria">
-              Ver perfil
-            </Link>
-
-          </div>
-
+      <div className="quick-stats">
+        <article>
+          <h3>4</h3>
+          <p>Integrantes</p>
         </article>
 
-        <article className="member-card">
-
-          <img
-            src="/agustina.jpg"
-            alt="Agustina"
-          />
-
-          <div className="card-content">
-
-            <h2>Agustina Brandemann</h2>
-
-            <p>
-              Desarrolladora orientada a interfaces modernas,
-              organización visual y experiencia de usuario.
-            </p>
-
-            <Link className="card-btn" to="/agustina">
-              Ver perfil
-            </Link>
-
-          </div>
-
+        <article>
+          <h3>React</h3>
+          <p>Arquitectura SPA</p>
         </article>
 
-        <article className="member-card">
-
-          <img
-            src="/matias.jpg"
-            alt="Matias"
-          />
-
-          <div className="card-content">
-
-            <h2>Matías Gonzalez</h2>
-
-            <p>
-              Desarrollador apasionado por la lógica,
-              APIs y funcionalidades dinámicas en React.
-            </p>
-
-            <Link className="card-btn" to="/matias">
-              Ver perfil
-            </Link>
-
-          </div>
-
+        <article>
+          <h3>Vercel</h3>
+          <p>Deploy final</p>
         </article>
-
-        <article className="member-card">
-
-          <img
-            src="/luis.jpg"
-            alt="Luis"
-          />
-
-          <div className="card-content">
-
-            <h2>Luis Specterman</h2>
-
-            <p>
-              Developer enfocado en soluciones digitales,
-              optimización y arquitectura frontend.
-            </p>
-
-            <Link className="card-btn" to="/luis">
-              Ver perfil
-            </Link>
-
-          </div>
-
-        </article>
-
       </div>
 
+      <div className="home-section-title">
+        <h2>Integrantes del equipo</h2>
+        <p>Te invitamos a conocernos.</p>
+      </div>
+
+      <div className="members-grid">
+        {integrantes.map((integrante, index) => (
+          <article
+            className="member-card"
+            key={integrante.nombre}
+            style={{ animationDelay: `${index * 0.12}s` }}
+          >
+            <div className="member-img-box">
+              <img src={integrante.imagen} alt={integrante.nombre} />
+            </div>
+
+            <div className="member-content">
+              <span>{integrante.rol}</span>
+              <h3>{integrante.nombre}</h3>
+              <p>{integrante.descripcion}</p>
+
+              <Link to={integrante.ruta}>Ver perfil</Link>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
-
   );
 }
 
