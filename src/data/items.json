@@ -1,0 +1,22 @@
+[
+  {"id": 1, "name": "Reporte de Ventas", "category": "Dashboard", "status": "Completo", "owner": "Marcelo", "description": "Informe trimestral de métricas comerciales."},
+  {"id": 2, "name": "Landing de Producto", "category": "UI", "status": "En progreso", "owner": "Integrante Dos", "description": "Página de presentación para el nuevo producto."},
+  {"id": 3, "name": "API de Usuarios", "category": "Backend", "status": "Completo", "owner": "Integrante Tres", "description": "Servicio REST para gestión de usuarios."},
+  {"id": 4, "name": "Control de Inventario", "category": "Dashboard", "status": "Pendiente", "owner": "Marcelo", "description": "Panel de control para existencias y pedidos."},
+  {"id": 5, "name": "Chat Interno", "category": "Mobile", "status": "En progreso", "owner": "Integrante Dos", "description": "Módulo de mensajería para equipos móviles."},
+  {"id": 6, "name": "Galería de Productos", "category": "UI", "status": "Completo", "owner": "Integrante Tres", "description": "Grid interactivo de imágenes con filtros."},
+  {"id": 7, "name": "Autenticación", "category": "Backend", "status": "Completo", "owner": "Marcelo", "description": "Sistema de login con JWT y roles."},
+  {"id": 8, "name": "Bitácora de Proyecto", "category": "Dashboard", "status": "En progreso", "owner": "Integrante Dos", "description": "Registro de tareas y flujo de trabajo."},
+  {"id": 9, "name": "Agenda de Reuniones", "category": "Mobile", "status": "Pendiente", "owner": "Integrante Tres", "description": "Agenda con notificaciones y recordatorios."},
+  {"id": 10, "name": "Módulo de Ventas", "category": "Backend", "status": "En progreso", "owner": "Marcelo", "description": "API para procesar transacciones comerciales."},
+  {"id": 11, "name": "Perfil de Usuario", "category": "UI", "status": "Completo", "owner": "Integrante Dos", "description": "Vista de perfil con información detallada."},
+  {"id": 12, "name": "Cálculo de Impuestos", "category": "Dashboard", "status": "Completo", "owner": "Integrante Tres", "description": "Herramienta financiera para reportes fiscales."},
+  {"id": 13, "name": "Chatbot Técnico", "category": "UI", "status": "Pendiente", "owner": "Marcelo", "description": "Interfaz conversacional para dudas técnicas."},
+  {"id": 14, "name": "Exportación CSV", "category": "Backend", "status": "Completo", "owner": "Integrante Dos", "description": "Funcionalidad para exportar datos en CSV."},
+  {"id": 15, "name": "Mapa de Usuarios", "category": "Dashboard", "status": "En progreso", "owner": "Integrante Tres", "description": "Visualización de ubicación de usuarios."},
+  {"id": 16, "name": "Sistema de Tickets", "category": "Backend", "status": "Pendiente", "owner": "Marcelo", "description": "Backend para gestión de incidencias."},
+  {"id": 17, "name": "Notificaciones Push", "category": "Mobile", "status": "Completo", "owner": "Integrante Dos", "description": "Alertas en tiempo real para la app móvil."},
+  {"id": 18, "name": "Filtro Avanzado", "category": "UI", "status": "En progreso", "owner": "Integrante Tres", "description": "Componentes de búsqueda con filtros dinámicos."},
+  {"id": 19, "name": "Panel de Rendimiento", "category": "Dashboard", "status": "Completo", "owner": "Marcelo", "description": "Métricas de velocidad y uso del sistema."},
+  {"id": 20, "name": "Integración API", "category": "Backend", "status": "En progreso", "owner": "Integrante Dos", "description": "Conexión con servicios externos y paginación."}
+]
