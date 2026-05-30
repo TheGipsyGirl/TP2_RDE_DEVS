@@ -43,7 +43,7 @@ function Home() {
         <p className="home-eyebrow">IFTS N° 29 - 2° AÑO - FRONT END - PROF. MARTINEZ </p>
 
         <h1>
-          Bienvenidos a <span>RDE Devs</span>
+          Bienvenidos a <span>RDE DEVS</span>
         </h1>
 
         <p>
