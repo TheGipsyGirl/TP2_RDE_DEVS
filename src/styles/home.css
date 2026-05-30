@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@400;600&family=Raleway:wght@400;500&display=swap');
+
+.home {
+  padding: 2rem 3rem;
+  background: #0d0d0d;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.ghost-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.home-title {
+  font-family: 'Creepster', cursive;
+  font-size: 3.5rem;
+  color: #4dff91;
+  text-shadow: 0 0 20px #4dff9180;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.home-subtitle {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.home-desc {
+  font-family: 'Raleway', sans-serif;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.section-title {
+  font-family: 'Creepster', cursive;
+  color: #4dff91;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 0 15px #4dff9160;
+  margin-bottom: 0.5rem;
+}
+
+.section-sub {
+  font-family: 'Raleway', sans-serif;
+  color: #888;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 0.9rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  animation: fadeSlideIn 0.5s ease both;
+  cursor: pointer;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  border-color: #4dff91;
+  box-shadow: 0 0 25px #4dff9140;
+}
+
+.card-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #4dff91;
+  background: #111;
+  box-shadow: 0 0 15px #4dff9150;
+}
+
+.card-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.card-rol {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  color: #4dff91;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-ciudad {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.card-btn {
+  margin-top: 0.75rem;
+  background: transparent;
+  border: 1px solid #4dff91;
+  color: #4dff91;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.profile-card:hover .card-btn {
+  background: #4dff91;
+  color: #0d0d0d;
+}
+
+/* Fantasmitas flotantes */
+.ghost-float {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.15;
+  animation: float 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.ghost-1 { top: 10%; left: 5%; animation-delay: 0s; }
+.ghost-2 { top: 50%; right: 3%; animation-delay: 1.5s; }
+.ghost-3 { bottom: 15%; left: 8%; animation-delay: 3s; }
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home { padding: 1.5rem; }
+  .home-title { font-size: 2.5rem; }
+  .cards-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+}
