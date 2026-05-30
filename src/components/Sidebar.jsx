@@ -1,62 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../styles/sidebar.css";
 
 function Sidebar() {
   return (
     <aside className="sidebar">
-
       <div className="logo">
-        <img src="/logo.png" alt="RDE Devs" />
-        <h2>RDE Devs</h2>
-        <span>Creative Frontend Collective</span>
+        <span className="sidebar-ghost">👻</span>
+        <h2>Rulos de Estatua</h2>
+        <span>¿A quién vas a llamar?</span>
       </div>
 
       <nav>
         <ul>
-
-          <li>
-            <Link to="/">Inicio</Link>
-          </li>
-
-          <li>
-            <Link to="/valeria">Valeria</Link>
-          </li>
-
-          <li>
-            <Link to="/agustina">Agustina</Link>
-          </li>
-
-          <li>
-            <Link to="/matias">Matías</Link>
-          </li>
-
-          <li>
-            <Link to="/luis">Luis</Link>
-          </li>
-
-          <li>
-            <Link to="/json">JSON Explorer</Link>
-          </li>
-
-          <li>
-            <Link to="/api">API</Link>
-          </li>
-
-          <li>
-            <Link to="/galeria">Galería</Link>
-          </li>
-
-          <li>
-            <Link to="/bitacora">Bitácora</Link>
-          </li>
-
-          <li>
-            <Link to="/arquitectura">Arquitectura</Link>
-          </li>
-
+          <li><NavLink to="/">Inicio</NavLink></li>
+          <li className="nav-section">— Cazadores —</li>
+          <li><NavLink to="/agustina">Agustina</NavLink></li>
+          <li><NavLink to="/valeria">Valeria</NavLink></li>
+          <li><NavLink to="/matias">Matías</NavLink></li>
+          <li><NavLink to="/luis">Luis</NavLink></li>
+          <li className="nav-section">— Secciones —</li>
+          <li><NavLink to="/json">JSON Explorer</NavLink></li>
+          <li><NavLink to="/api">API</NavLink></li>
+          <li><NavLink to="/galeria">Galería</NavLink></li>
+          <li><NavLink to="/bitacora">Bitácora</NavLink></li>
+          <li><NavLink to="/arquitectura">Arquitectura</NavLink></li>
         </ul>
       </nav>
-
     </aside>
   );
 }
