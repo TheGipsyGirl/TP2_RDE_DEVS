@@ -7,7 +7,7 @@ const integrantes = [
     rol: "Frontend creativa · Diseño Web",
     descripcion:
       "Desarrolladora enfocada en identidad visual, interfaces modernas y experiencias digitales con personalidad.",
-    imagen: "/public/img/valeria/perfil.jpg",
+    imagen: "/public/img/valeria/vale.jpg",
     ruta: "/valeria",
   },
   {
@@ -15,7 +15,7 @@ const integrantes = [
     rol: "Frontend Developer",
     descripcion:
       "Desarrolladora enfocada en el desarrollo de interfaces y experiencia de usuario.",
-    imagen: "/integrantes/agustina/perfil.jpg",
+    imagen: "/public/img/agustina/agus.jpg",
     ruta: "/agustina",
   },
   {
@@ -23,7 +23,7 @@ const integrantes = [
     rol: "React Developer",
     descripcion:
       "Programador orientado a lógica, componentes dinámicos y manejo de datos en React.",
-    imagen: "/integrantes/matias/perfil.jpg",
+    imagen: "/public/img/matias/matias.jpg",
     ruta: "/matias",
   },
   {
@@ -31,7 +31,7 @@ const integrantes = [
     rol: "Frontend · API Integration",
     descripcion:
       "Programador enfocado en integración de APIs, galería interactiva y funcionalidades dinámicas.",
-    imagen: "/public/img/img_luis/FOTO_PERFIL.jpg",
+    imagen: "/public/img/img_luis/luis.jpg",
     ruta: "/luis",
   },
 ];

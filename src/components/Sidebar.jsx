@@ -6,9 +6,9 @@ function Sidebar() {
     <aside className="sidebar">
 
       <div className="logo">
-        <img src="/logo.png" alt="RDE Devs" />
-        <h2>RDE Devs</h2>
-        <span>Creative Frontend Collective</span>
+        <img src="/public/img/logo.png" alt="RDE DEVS" />
+        <h2></h2>
+        <span></span>
       </div>
 
       <nav>
