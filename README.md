@@ -18,7 +18,7 @@ Además de conservar las páginas personales de cada integrante, se incorporaron
 
 ---
 
- 👥 Integrantes
+ ## 👥 Integrantes
 
 | Integrante          | GitHub                            |
 | ------------------- | --------------------------------- |
@@ -29,7 +29,7 @@ Además de conservar las páginas personales de cada integrante, se incorporaron
 
 ---
 
- 🛠 Tecnologías Utilizadas
+ ## 🛠 Tecnologías Utilizadas
 
 * React
 * React Router DOM
@@ -41,34 +41,58 @@ Además de conservar las páginas personales de cada integrante, se incorporaron
 * Vercel
 
 ---
+ ## 🏗 Arquitectura del Proyecto
 
- 🏗 Arquitectura del Proyecto
-
-```text
-src
-├── assets
-├── components
-│   ├── Layout.jsx
-│   ├── ProfileCard.jsx
-│   └── Sidebar.jsx
-│
-├── pages
-│   ├── Home.jsx
-│   ├── Valeria.jsx
-│   ├── Agustina.jsx
-│   ├── Matias.jsx
-│   ├── Luis.jsx
-│   ├── ApiPage.jsx
-│   ├── JsonExplorer.jsx
-│   ├── Galeria.jsx
-│   ├── Bitacora.jsx
-│   └── Arquitectura.jsx
-│
-├── styles
-├── App.jsx
-└── main.jsx
 ```
-
+TP2_RDE_DEVS/
+├── public/
+│   ├── favicon.svg
+│   ├── icons.svg
+│   └── img/
+│       ├── agustina/       # Imágenes del perfil de Agustina
+│       ├── img_luis/       # Imágenes del perfil de Luis
+│       ├── matias/         # Imágenes del perfil de Matías
+│       └── valeria/        # Imágenes del perfil de Valeria
+│           ├── discos/
+│           └── peliculas/
+├── src/
+│   ├── assets/
+│   │   └── icons/
+│   │       └── luis/       # Íconos SVG personalizados
+│   ├── components/
+│   │   ├── Layout.jsx      # Estructura base (Sidebar + Outlet)
+│   │   ├── ProfileCard.jsx # Tarjeta de perfil reutilizable
+│   │   └── Sidebar.jsx     # Navegación lateral
+│   ├── pages/
+│   │   ├── Home.jsx        # Dashboard principal
+│   │   ├── Agustina.jsx    # Perfil personal
+│   │   ├── Valeria.jsx     # Perfil personal
+│   │   ├── Matias.jsx      # Perfil personal
+│   │   ├── Luis.jsx        # Perfil personal
+│   │   ├── ApiPage.jsx     # Películas con TMDB API
+│   │   ├── JsonExplorer.jsx# Explorador JSON con filtros
+│   │   ├── Galeria.jsx     # Galería con Lightbox
+│   │   ├── Bitacora.jsx    # Bitácora de desarrollo
+│   │   └── Arquitectura.jsx# Árbol de renderizado
+│   ├── styles/
+│   │   ├── global.css      # Variables CSS y estilos base
+│   │   ├── sidebar.css
+│   │   ├── home.css
+│   │   ├── agustina.css
+│   │   ├── valeria.css
+│   │   ├── matias.css
+│   │   ├── luis.css
+│   │   ├── api.css
+│   │   ├── galeria.css
+│   │   ├── jsonExplorer.css
+│   │   ├── bitacora.css
+│   │   └── arquitectura.css
+│   ├── App.jsx             # Definición de rutas con React Router
+│   └── main.jsx            # Punto de entrada
+├── index.html
+├── package.json
+└── vite.config.js
+```
 ---
 
  🔄 Migración TP1 → TP2
