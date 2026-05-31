@@ -112,6 +112,20 @@ TP2_RDE_DEVS/
 | Proyecto estático           | Dashboard interactivo |
 
 ---
+### Navegación principal
+
+- [Home](https://tp-2-rde-devs.vercel.app/)
+- [Valeria](https://tp-2-rde-devs.vercel.app/valeria)
+- [Agustina](https://tp-2-rde-devs.vercel.app/agustina)
+- [Matías](https://tp-2-rde-devs.vercel.app/matias)
+- [Luis](https://tp-2-rde-devs.vercel.app/luis)
+- [API](https://tp-2-rde-devs.vercel.app/api)
+- [JSON Explorer](https://tp-2-rde-devs.vercel.app/json)
+- [Galería](https://tp-2-rde-devs.vercel.app/galeria)
+- [Bitácora](https://tp-2-rde-devs.vercel.app/bitacora)
+- [Arquitectura](https://tp-2-rde-devs.vercel.app/arquitectura)
+
+---
 
 ## ⚙️ JavaScript / React – Funciones Dinámicas y Componentes Clave
 
@@ -233,7 +247,7 @@ Se mantuvo una identidad visual común basada en tonos oscuros y verde como colo
 
 ---
 
-👨‍💻 Trabajo Colaborativo
+### 👨‍💻 Trabajo Colaborativo
 
 El proyecto fue desarrollado utilizando Git y GitHub mediante ramas individuales para cada integrante.
 
@@ -241,7 +255,7 @@ Posteriormente se realizó la integración de los cambios al repositorio grupal 
 
 ---
 
-🤖 Uso de Inteligencia Artificial
+### 🤖 Uso de Inteligencia Artificial
 
 
 Durante el desarrollo del TP2 utilizamos herramientas de Inteligencia Artificial como apoyo para resolver dudas técnicas, comprender conceptos y agilizar algunas tareas del proyecto.
