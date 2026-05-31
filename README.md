@@ -180,7 +180,11 @@ Explora un dataset local de 20 objetos con búsqueda en tiempo real y filtros m�
 - Filtros por categoría de tecnología y nivel
 - `useMemo` para optimizar el recálculo del array filtrado
 
-> 📸 *Agregar captura de pantalla del JSON Explorer aquí*
+![JSON Explorer](./docs/screenshots/json-01.png)
+
+![JSON Explorer - Filtro 1](./docs/screenshots/json-02.png)
+
+![JSON Explorer - Filtro 2](./docs/screenshots/json-03.png)
 
 ---
 
