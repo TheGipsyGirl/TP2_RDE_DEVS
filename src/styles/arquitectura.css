@@ -1,0 +1,199 @@
+.arquitectura-page {
+  color: #151515;
+}
+
+.arquitectura-hero {
+  background: linear-gradient(135deg, #151515, #1f2d24);
+  color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.arquitectura-hero p {
+  color: #23c44e;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.arquitectura-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin: 1rem 0;
+}
+
+.arquitectura-hero span {
+  color: #e8e8e8;
+}
+
+.arquitectura-card,
+.arquitectura-grid article {
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.arquitectura-card {
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.tree {
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+}
+
+.tree ul {
+  margin-left: 2rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid #dce8df;
+}
+
+.tree li {
+  list-style: none;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.tree-node {
+  display: inline-block;
+  background: #f3f8f5;
+  border: 1px solid #dce8df;
+  color: #151515;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.tree-node.root {
+  background: #23c44e;
+  color: #151515;
+}
+
+.arquitectura-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.arquitectura-grid p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.arquitectura-grid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.arquitectura-grid td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #eee;
+}
+
+.arquitectura-grid td:first-child {
+  font-weight: 800;
+  color: #23c44e;
+}
+
+@media (max-width: 900px) {
+  .arquitectura-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==========================
+   TABLAS TP1 → TP2
+========================== */
+
+.arquitectura-section {
+  margin-top: 3rem;
+}
+
+.arquitectura-section h2 {
+  color: #23c44e;
+  margin-bottom: 1.5rem;
+}
+
+.arquitectura-table-wrapper {
+  overflow-x: auto;
+}
+
+.arquitectura-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.arquitectura-table thead {
+  background: #151515;
+}
+
+.arquitectura-table th {
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+}
+
+.arquitectura-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eeeeee;
+  color: #555;
+}
+
+.arquitectura-table tr:hover {
+  background: #f5f7f6;
+}
+
+.arquitectura-table td:first-child {
+  font-weight: 700;
+}
+.flow-box {
+  background: #f5f7f6;
+  border: 2px dashed #23c44e;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: #151515;
+  margin-top: 1rem;
+}
+
+
+/* ==========================
+   RESUMEN FINAL
+========================== */
+
+.arquitectura-resumen {
+  margin-top: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  border-left: 6px solid #23c44e;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.arquitectura-resumen h2 {
+  color: #23c44e;
+  margin-bottom: 1rem;
+}
+
+.arquitectura-resumen p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 900px) {
+  .arquitectura-table {
+    min-width: 700px;
+  }
+}
