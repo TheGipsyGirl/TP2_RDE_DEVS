@@ -31,14 +31,17 @@ Además de conservar las páginas personales de cada integrante, se incorporaron
 
  ## 🛠 Tecnologías Utilizadas
 
-* React
-* React Router DOM
-* JavaScript (ES6+)
-* HTML5
-* CSS3
-* Git
-* GitHub
-* Vercel
+| Categoría | Tecnología |
+|---|---|
+| Framework JS | React 18 |
+| Enrutamiento | React Router DOM v6 |
+| Lenguajes | JavaScript (ES6+), JSX, HTML5, CSS3 |
+| Build Tool | Vite |
+| Tipografías | Google Fonts (Raleway) |
+| Iconografía | SVG personalizados (assets/icons) |
+| API Externa | The Movie Database (TMDB) |
+| Control de versiones | Git + GitHub |
+| Deploy | Vercel |
 
 ---
  ## 🏗 Arquitectura del Proyecto
