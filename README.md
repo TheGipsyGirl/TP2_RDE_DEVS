@@ -170,7 +170,9 @@ También fue útil para entender algunos conceptos relacionados con React Router
 
 ChatGPT fue utilizado especialmente durante el proceso de migración del TP1 al TP2. Nos ayudó a planificar cómo transformar las páginas HTML originales en componentes React, organizar la estructura general de la aplicación y adaptar el proyecto a una arquitectura SPA utilizando React Router.
 
-Además, colaboró en la redacción de documentación, bitácora, arquitectura y README del proyecto.
+Además, colaboró en la redacción de documentación, bitácora, arquitectura y README del proyecto. 
+
+Chat GPT nos ayudo a elegir el nuevo nombre del sitio. 
 
  Gemini
 
@@ -180,6 +182,8 @@ Gemini fue utilizado principalmente para generar algunas imágenes y recursos vi
 
 Las herramientas de Inteligencia Artificial fueron utilizadas como asistentes de apoyo durante el proceso de aprendizaje y desarrollo. Todas las decisiones finales, modificaciones y validaciones del código fueron realizadas por los integrantes del equipo, quienes revisaron, adaptaron y probaron cada solución antes de incorporarla al proyecto.
 
+Link al Drive con Imágenes de las ayudas de IA en este proyecto: 
+**https://drive.google.com/drive/u/0/folders/1LkVf6MaKqQdCl31vkxWRx3Na0RNildve**
 
 ---
 
@@ -199,4 +203,4 @@ Las herramientas de Inteligencia Artificial fueron utilizadas como asistentes de
 El TP2 permitió transformar un proyecto desarrollado con tecnologías web tradicionales en una aplicación React moderna basada en componentes reutilizables.
 
 La migración incorporó nuevas funcionalidades, mejoró la organización del código y permitió aplicar conceptos fundamentales de desarrollo frontend moderno como React Router, Hooks, SPA y reutilización de componentes.
->>>>>>> feature/valeria
+
