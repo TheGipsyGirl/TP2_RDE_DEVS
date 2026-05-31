@@ -6,7 +6,7 @@ function Sidebar() {
     <aside className="sidebar">
 
       <div className="logo">
-        <img src="/public/img/logo.png" alt="RDE DEVS" />
+        <img src="/img/logo.png" alt="RDE DEVS" />
         <h2></h2>
         <span></span>
       </div>

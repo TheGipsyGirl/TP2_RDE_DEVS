@@ -91,7 +91,7 @@ const seccionesPerfil = [
       <div className="valeria-hero fade-up">
         <div className="hero-avatar">
           <span className="blob"></span>
-          <img src="/public/img/valeria/perfil.jpg" alt="Valeria Natucci" />
+          <img src="/img/valeria/perfil.jpg" alt="Valeria Natucci" />
           <div className="sticker">Creativa, curiosa y con alma viajera ✨</div>
         </div>
 
@@ -211,19 +211,19 @@ const seccionesPerfil = [
 
         <div className="movies-grid">
           <article>
-            <img src="public/img/valeria/peliculas/unamentebrillante.jpg" alt="Interstellar" />
+            <img src="/img/valeria/peliculas/unamentebrillante.jpg" alt="Interstellar" />
             <h3>Una mente brillante</h3>
             <p>Me gusta porque mezcla ciencia, salud y emoción.</p>
           </article>
 
           <article>
-            <img src="public/img/valeria/peliculas/coco.jpg" alt="Coco" />
+            <img src="/img/valeria/peliculas/coco.jpg" alt="Coco" />
             <h3>Coco</h3>
             <p>Valora la vida, la memoria y la familia.</p>
           </article>
 
           <article>
-            <img src="public/img/valeria/peliculas/shrek2.jpg" alt="Shrek" />
+            <img src="/img/valeria/peliculas/shrek2.jpg" alt="Shrek" />
             <h3>Shrek</h3>
             <p>Un clásico divertido, lleno de humor y memes.</p>
           </article>
@@ -237,7 +237,7 @@ const seccionesPerfil = [
           <article className="vinyl-item">
             <div className="vinyl">
               <span></span>
-              <img src="public/img/valeria/discos/futurenostalgia.jpg" alt="Future Nostalgia" />
+              <img src="/img/valeria/discos/futurenostalgia.jpg" alt="Future Nostalgia" />
             </div>
             <h3>Future Nostalgia</h3>
             <p>Dua Lipa</p>
@@ -246,7 +246,7 @@ const seccionesPerfil = [
           <article className="vinyl-item">
             <div className="vinyl">
               <span></span>
-              <img src="public/img/valeria/discos/riot.jpg" alt="Divide" />
+              <img src="/img/valeria/discos/riot.jpg" alt="Divide" />
             </div>
             <h3>RIOT</h3>
             <p>Paramore</p>
@@ -255,7 +255,7 @@ const seccionesPerfil = [
           <article className="vinyl-item">
             <div className="vinyl">
               <span></span>
-              <img src="public/img/valeria/discos/unveranosinti.jpg" alt="Un Verano Sin Ti" />
+              <img src="/img/valeria/discos/unveranosinti.jpg" alt="Un Verano Sin Ti" />
             </div>
             <h3>Un Verano Sin Ti</h3>
             <p>Bad Bunny</p>
