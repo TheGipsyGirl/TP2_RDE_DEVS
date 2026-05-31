@@ -10,13 +10,13 @@
 /* ── Header ── */
 .galeria-header {
   margin-bottom: 2rem;
-  border-left: 4px solid #ff4d7d;
+  border-left: 4px solid #23c44e;
   padding-left: 1rem;
 }
 
 .galeria-tag {
   font-size: 0.8rem;
-  color: #ff4d7d;
+  color: #23c44e;
   font-family: monospace;
   letter-spacing: 0.08em;
   margin-bottom: 0.3rem;
@@ -58,7 +58,7 @@
 }
 
 .filtro-btn:hover {
-  border-color: #ff4d7d;
+  border-color:#23c44e;
   color: #ff4d7d;
   transform: translateY(-2px);
 }
@@ -136,7 +136,7 @@
 }
 
 .galeria-overlay-cat {
-  color: #22d6c5;
+  color: #23c44e;
   font-size: 0.72rem;
   font-family: monospace;
 }
@@ -225,8 +225,8 @@
 }
 
 .lb-btn:hover:not(:disabled) {
-  background: #ff4d7d;
-  border-color: #ff4d7d;
+  background: #23c44e;
+  border-color:#23c44e;
 }
 
 .lb-btn:disabled {
@@ -236,16 +236,16 @@
 
 .lb-cerrar {
   margin-left: 0.4rem;
-  background: rgba(255, 77, 125, 0.15);
-  border-color: rgba(255, 77, 125, 0.3);
+  background: rgba(35, 196, 78, 0.15);
+  border-color: rgba(35, 196, 78, 0.3);
 }
 
 .lb-cerrar:hover {
-  background: #ff4d7d !important;
+  background: #23c44e!important;
 }
 
 .lb-zoom-pct {
-  color: #22d6c5;
+  color: #23c44e;
   font-size: 0.8rem;
   font-weight: bold;
   min-width: 42px;
@@ -294,7 +294,7 @@
 }
 
 .lb-nav:hover {
-  background: #ff4d7d;
+  background: #23c44e;
 }
 
 .lb-nav-prev {
@@ -326,7 +326,7 @@
 
 .lb-categoria {
   font-size: 0.75rem;
-  color: #22d6c5;
+  color: #23c44e;
   font-family: monospace;
   background: rgba(34, 214, 197, 0.1);
   padding: 0.2rem 0.6rem;
