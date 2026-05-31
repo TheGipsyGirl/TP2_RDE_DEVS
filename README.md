@@ -12,10 +12,6 @@
 
 RDE Devs es la evolución del Trabajo Práctico 1 de Desarrollo Web. El proyecto consistió en migrar el sitio grupal desarrollado originalmente con HTML, CSS y JavaScript hacia una aplicación React basada en componentes reutilizables y navegación mediante React Router.
 
-<<<<<<< HEAD
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-Agregado esta linea para probar 
-=======
 Durante esta segunda etapa se implementó una arquitectura SPA (Single Page Application), permitiendo una navegación más fluida y una mejor organización del código.
 
 Además de conservar las páginas personales de cada integrante, se incorporaron nuevas funcionalidades como un Dashboard principal, integración con API externa, Galería de imágenes, Explorador JSON, Bitácora de desarrollo y sección de Arquitectura.
