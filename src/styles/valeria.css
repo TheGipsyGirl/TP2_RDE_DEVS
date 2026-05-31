@@ -9,7 +9,7 @@
   position: fixed;
   top: 6rem;
   right: 3rem;
-  color: rgba(255, 77, 125, 0.18);
+  color: rgba(35, 196, 78, 0.18);
   font-size: 3rem;
   z-index: -1;
 }
@@ -50,7 +50,7 @@
   position: absolute;
   width: 310px;
   height: 330px;
-  background: linear-gradient(135deg, #ff4d7d, #ffd166);
+  background: linear-gradient(135deg, #23c44e, #23c44e);
   border-radius: 55% 45% 60% 40%;
   transform: rotate(-8deg);
   z-index: 0;
@@ -70,7 +70,7 @@
 .sticker {
   position: absolute;
   bottom: -1.4rem;
-  background: #ffd166;
+  background: #23c44e;
   color: #151515;
   padding: 0.8rem 1rem;
   border-radius: 0.8rem;
@@ -81,7 +81,7 @@
 }
 
 .eyebrow {
-  color: #22d6c5;
+  color: #24332b;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
@@ -97,7 +97,7 @@
 .nickname {
   display: inline-block;
   margin-bottom: 1.5rem;
-  color: #ff4d7d;
+  color: #23c44e;
   font-weight: 800;
   font-size: 1.2rem;
 }
@@ -130,7 +130,7 @@
 }
 
 .socials a:hover {
-  background: #ff4d7d;
+  background: #23c44e;
   transform: translateY(-6px) scale(1.08);
 }
 
@@ -174,7 +174,7 @@
 
 .datos {
   margin-top: 1.5rem;
-  background: #fff1f5;
+  background: #eef7f0;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -184,7 +184,7 @@
 }
 
 .postit {
-  background: #ffd1dc;
+  background: #e8f5eb;
   transform: rotate(2deg);
   align-self: center;
   position: relative;
@@ -194,7 +194,7 @@
   content: "";
   width: 5rem;
   height: 1.5rem;
-  background: rgba(34, 214, 197, 0.55);
+  background: rgba(35, 196, 78, 0.35);
   position: absolute;
   top: -0.7rem;
   left: 50%;
@@ -231,7 +231,7 @@
 .progress {
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #ff4d7d, #22d6c5);
+  background: linear-gradient(90deg, #23c44e, #24332b);
   animation: fillBar 1.2s ease both;
 }
 
@@ -276,7 +276,7 @@
 }
 
 .icons svg:hover {
-  color: #ff4d7d;
+  color: #23c44e;
   transform: translateY(-8px) rotate(-6deg);
 }
 
@@ -306,7 +306,7 @@
 }
 
 .carousel button:hover {
-  background: #ff4d7d;
+  background: #23c44e;
   transform: scale(1.08);
 }
 
@@ -315,7 +315,7 @@
   grid-template-columns: 320px 1fr;
   gap: 2rem;
   align-items: center;
-  background: #fff8f2;
+  background: #f5f7f6;
   border-radius: 1.5rem;
   overflow: hidden;
 }
@@ -331,7 +331,7 @@
 }
 
 .project-card h3 {
-  color: #ff4d7d;
+  color: #23c44e;
   margin-bottom: 0.8rem;
   font-size: 1.5rem;
 }
@@ -344,7 +344,7 @@
 
 .project-card span {
   display: block;
-  color: #22d6c5;
+  color: #24332b;
   font-weight: 800;
   margin-bottom: 1rem;
 }
@@ -360,7 +360,7 @@
 }
 
 .project-card a:hover {
-  background: #ff4d7d;
+  background: #23c44e;
 }
 
 .contador {
@@ -383,7 +383,7 @@
 }
 
 .movies-grid article {
-  background: #fff8f2;
+  background: #f5f7f6;
   border-radius: 1.3rem;
   overflow: hidden;
   transition: 0.3s ease;
@@ -400,7 +400,7 @@
 }
 
 .movies-grid h3 {
-  color: #ff4d7d;
+  color: #23c44e;
   padding: 1rem 1rem 0.3rem;
 }
 
@@ -507,7 +507,7 @@
 }
 
 .vinyl-item h3 {
-  color: #ff4d7d;
+  color: #23c44e;
   margin-top: 1rem;
 }
 
@@ -579,8 +579,8 @@
   z-index: 999;
   background: linear-gradient(
     135deg,
-    #ff4d7d,
-    #ffd166
+    #23c44e,
+    #23c44e
   );
   border-radius: 1.5rem;
   padding: 1rem 1.5rem;
@@ -591,7 +591,7 @@
   align-items: center;
 
   box-shadow:
-    0 15px 30px rgba(255,77,125,.25);
+    0 15px 30px rgba(35,196,78,.25);
 }
 
 .valeria-nav-title {
@@ -631,7 +631,7 @@
 }
 
 .valeria-nav-links a:hover {
-  background: #22d6c5;
+  background: #24332b;
 
   color: white;
 
@@ -652,7 +652,7 @@
 
   background: white;
 
-  color: #ff4d7d;
+  color: #23c44e;
 
   font-size: 1.3rem;
 

@@ -1,0 +1,280 @@
+.agustina-page {
+  color: #f3f3f3;
+}
+
+.agustina-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 320px;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, #151515, #262630);
+  padding: 3rem;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.agustina-hero::before {
+  content: "";
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background: rgba(255, 77, 181, 0.18);
+  right: -5rem;
+  top: -5rem;
+}
+
+.agus-label {
+  color: #ff4db5;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.agustina-texto h1 {
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.agustina-texto h1 span {
+  color: #ff4db5;
+}
+
+.agustina-texto p {
+  max-width: 760px;
+  color: #ccccd6;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.agustina-avatar {
+  position: relative;
+  z-index: 2;
+}
+
+.agustina-avatar img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ff4db5;
+  box-shadow: 0 0 45px rgba(255, 77, 181, 0.25);
+}
+
+.agus-socials {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.agus-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #111118;
+  color: #f3f3f3;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 77, 181, 0.35);
+  transition: 0.3s ease;
+}
+
+.agus-socials a:hover {
+  background: #ff4db5;
+  color: #151515;
+  transform: translateY(-5px);
+}
+
+.agus-card,
+.agus-section,
+.agus-contacto {
+  background: #16161f;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+  border: 1px solid #242438;
+}
+
+.agus-card h2,
+.agus-section h2,
+.agus-contacto h2 {
+  color: #ff4db5;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.agus-card p,
+.agus-contacto p {
+  color: #ccccd6;
+  line-height: 1.8;
+}
+
+/* ICONS */
+
+.agus-icons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.agus-icons svg {
+  font-size: 4rem;
+  color: #f3f3f3;
+  transition: 0.3s ease;
+}
+
+.agus-icons svg:hover {
+  color: #ff4db5;
+  transform: translateY(-8px) rotate(-5deg);
+}
+
+/* HABILIDADES */
+
+.agus-barras {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.agus-barra-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  color: #f3f3f3;
+  font-weight: 700;
+}
+
+.agus-barra-track {
+  height: 10px;
+  background: #262630;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.agus-barra-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4db5, #ff8fd4);
+  border-radius: 999px;
+  transition: width 1.2s ease;
+}
+
+/* CARRUSEL */
+
+.agus-carrusel {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.agus-carrusel button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #ff4db5;
+  color: #151515;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.agus-carrusel article {
+  background: #111118;
+  padding: 2rem;
+  border-radius: 1.4rem;
+  border: 1px solid #242438;
+}
+
+.agus-carrusel article span {
+  color: #ff4db5;
+  font-weight: 800;
+}
+
+.agus-carrusel article h3 {
+  margin: 0.7rem 0;
+}
+
+.agus-carrusel article p {
+  color: #ccccd6;
+  line-height: 1.6;
+}
+
+.agus-contador {
+  text-align: center;
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+/* MEDIA */
+
+.agus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.agus-media {
+  background: #111118;
+  border-radius: 1.4rem;
+  overflow: hidden;
+  border: 1px solid #242438;
+  transition: 0.3s ease;
+}
+
+.agus-media:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 77, 181, 0.55);
+}
+
+.agus-media img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.agus-media div {
+  padding: 1.2rem;
+}
+
+.agus-media span {
+  color: #ff4db5;
+  font-weight: 800;
+}
+
+.agus-media h3 {
+  margin: 0.4rem 0;
+}
+
+.agus-media p {
+  color: #ccccd6;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .agustina-hero,
+  .agus-carrusel {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .agustina-avatar {
+    max-width: 280px;
+    margin: auto;
+  }
+
+  .agus-socials,
+  .agus-icons {
+    justify-content: center;
+  }
+
+  .agus-grid {
+    grid-template-columns: 1fr;
+  }
+}

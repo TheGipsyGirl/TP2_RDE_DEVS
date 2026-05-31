@@ -96,7 +96,7 @@ const seccionesPerfil = [
         </div>
 
         <div className="hero-info">
-          <p className="eyebrow">Perfil profesional</p>
+          <p className="eyebrow"></p>
           <h1>Valeria Natucci</h1>
           <span className="nickname">@TheGypsyGirl</span>
 
