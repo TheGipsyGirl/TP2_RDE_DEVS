@@ -1,10 +1,12 @@
  # 🚀 RDE Devs – TP2 React
 
- 🌐 Proyecto Desplegado
+## 🔗 Enlace al Proyecto Desplegado
 
-🔗 **Vercel:** https://tp-2-rde-devs.vercel.app/
+| Recurso | Link |
+|---|---|
+| 🌐 Sitio en producción | [https://tp-2-rde-devs.vercel.app/](https://tp-2-rde-devs.vercel.app/) |
+| 📁 Repositorio | [https://github.com/TheGipsyGirl/TP2_RDE_DEVS](https://github.com/TheGipsyGirl/TP2_RDE_DEVS) |
 
-🔗 **Repositorio GitHub:** https://github.com/TheGipsyGirl/TP2_RDE_DEVS.git
 
 ---
  
@@ -98,7 +100,7 @@ TP2_RDE_DEVS/
 ```
 ---
 
- 🔄 Migración TP1 → TP2
+ ## 🔄 Migración TP1 → TP2
 
 | TP1                         | TP2                   |
 | --------------------------- | --------------------- |
@@ -111,56 +113,121 @@ TP2_RDE_DEVS/
 
 ---
 
- 🚀 Funcionalidades Implementadas
+## ⚙️ JavaScript / React – Funciones Dinámicas y Componentes Clave
 
- Home Dashboard
+### 1. React Router + Layout (`App.jsx`, `Layout.jsx`, `Sidebar.jsx`)
 
+Toda la navegación del sitio utiliza **React Router DOM v6** con rutas anidadas. El componente `Layout` actúa como wrapper persistente (con el `Sidebar` siempre visible) y renderiza la página activa a través de `<Outlet />`.
+ Home Dashboard 
 Pantalla principal que centraliza el acceso a todas las secciones del proyecto.
 
- Perfiles Personales
+```
+/ (Home)
+├── /valeria
+├── /agustina
+├── /matias
+├── /luis
+├── /api
+├── /json
+├── /galeria
+├── /bitacora
+└── /arquitectura
+```
 
-Cada integrante dispone de una página personalizada desarrollada en React donde presenta información personal, habilidades, proyectos, gustos e intereses.
+---
 
- API Externa
+### 2. API Externa – Películas Populares (`ApiPage.jsx`)
 
-Implementación de consumo de datos externos mediante Fetch API y renderización dinámica de información.
+Consume la **API de The Movie Database (TMDB)** para mostrar películas populares con paginación dinámica.
 
- Galería
+**Hooks utilizados:** `useState`, `useEffect`
 
-Galería interactiva con imágenes organizadas y navegación visual.
+**Funciones clave:**
+- `fetchMovies()` — llamada asíncrona con `fetch` al endpoint `/movie/popular`
+- Estados de loading, error y datos
+- Paginación controlada con botones Anterior / Siguiente e input numérico directo
 
- JSON Explorer
+> 📸 *Agregar captura de pantalla de la página de API aquí*
 
-Explorador de datos JSON con:
+---
 
-* Renderización dinámica de objetos
-* Buscador en tiempo real
-* Filtros por categorías
-* Manejo de estados mediante React
+### 3. JSON Explorer (`JsonExplorer.jsx`)
 
- Bitácora
+Explora un dataset local de 20 objetos con búsqueda en tiempo real y filtros múltiples.
+
+**Hooks utilizados:** `useState`, `useMemo`
+
+**Funciones clave:**
+- Búsqueda por texto que filtra sobre nombre, rol, tecnología, nivel y ciudad simultáneamente
+- Filtros por categoría de tecnología y nivel
+- `useMemo` para optimizar el recálculo del array filtrado
+
+> 📸 *Agregar captura de pantalla del JSON Explorer aquí*
+
+---
+
+### 4. Galería con Lightbox (`Galeria.jsx`)
+
+Galería interactiva con 15 imágenes, filtro por categorías y visualización en Lightbox con zoom.
+
+**Hooks utilizados:** `useState`, `useEffect`, `useCallback`
+
+**Funciones clave:**
+- Filtrado por categoría (Naturaleza, Arquitectura, Tecnología)
+- Componente `Lightbox` con zoom (`+` / `-`), drag para mover imagen ampliada, navegación con teclado (← →) y cierre con `ESC`
+- `useCallback` para estabilizar las funciones de navegación
+
+> 📸 *Agregar captura de pantalla de la galería y del lightbox aquí*
+
+---
+
+### 5. Perfiles Personales (`Agustina.jsx`, `Valeria.jsx`, `Matias.jsx`, `Luis.jsx`)
+
+Cada integrante cuenta con su propia página personalizada construida en React, con secciones de presentación, habilidades, proyectos e intereses.
+
+> 📸 *Agregar capturas de cada perfil aquí*
+
+---
+
+### 6. Bitácora
 
 Registro del proceso de migración y desarrollo del proyecto.
 
- Arquitectura
+### 7. Arquitectura
 
 Representación visual del árbol de renderizado y documentación técnica de la migración.
 
 ---
 
- 🎨 Guía de Estilos
+## 🎨 Guía de Estilos
 
- Paleta Principal
+### Paleta de Colores
 
-| Uso             | Color   |
-| --------------- | ------- |
-| Fondo principal | #151515 |
-| Verde principal | #23c44e |
-| Verde oscuro    | #24332b |
-| Fondo claro     | #f5f7f6 |
-| Texto principal | #ffffff |
+| Variable | Hex | Uso |
+|---|---|---|
+| `--color-bg` | `#0a0a0f` | Fondo principal |
+| `--color-surface` | `#111118` | Superficies secundarias |
+| `--color-card` | `#16161f` | Tarjetas y paneles |
+| `--color-border` | `#2a2a3a` | Bordes y separadores |
+| `--color-primary` | `#4dff91` | Verde principal / acentos |
+| `--color-primary-dark` | `#00cc5a` | Verde oscuro / hover |
+| `--color-text` | `#e8e8f0` | Texto principal |
+| `--color-muted` | `#7a7a9a` | Texto secundario / atenuado |
 
- Diseño
+> También se utilizan `#151515`, `#23c44e`, `#24332b` y `#f5f7f6` en los estilos de perfiles individuales.
+
+### Tipografías
+
+| Fuente | Uso | Link |
+|---|---|---|
+| **Raleway** | Tipografía principal del sitio | [Google Fonts – Raleway](https://fonts.google.com/specimen/Raleway) |
+| Arial / Helvetica | Fuentes de fallback del sistema | — |
+
+### Iconografía
+
+Los íconos utilizados en los perfiles son **SVGs personalizados** ubicados en `src/assets/icons/`. Incluyen: HTML5, CSS3, JavaScript, React, Git, GitHub, LinkedIn, Twitter y más.
+
+### Diseño
 
 Se mantuvo una identidad visual común basada en tonos oscuros y verde como color institucional del proyecto, permitiendo a cada integrante conservar elementos distintivos dentro de su perfil personal.
 
