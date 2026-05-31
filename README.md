@@ -288,27 +288,14 @@ Gemini fue utilizado principalmente para generar algunas imágenes y recursos vi
 
  Reflexión
 
-Las herramientas de Inteligencia Artificial fueron utilizadas como asistentes de apoyo durante el proceso de aprendizaje y desarrollo. Todas las decisiones finales, modificaciones y validaciones del código fueron realizadas por los integrantes del equipo, quienes revisaron, adaptaron y probaron cada solución antes de incorporarla al proyecto.
+Las herramientas de Inteligencia Artificial fueron utilizadas como asistentes de apoyo durante el proceso de aprendizaje y desarrollo.
+> Todas las decisiones finales, modificaciones y validaciones del código fueron realizadas por los integrantes del equipo, quienes revisaron, adaptaron y probaron cada solución antes de incorporarla al proyecto.
 
-Link al Drive con Imágenes de las ayudas de IA en este proyecto: 
-**https://drive.google.com/drive/u/0/folders/1LkVf6MaKqQdCl31vkxWRx3Na0RNildve**
-
----
-
-# 🔗 Navegación principal
-
-- [Home](https://tp-2-rde-devs.vercel.app/)
-- [Bitácora](https://tp-2-rde-devs.vercel.app/bitacora)
-- [Arquitectura](https://tp-2-rde-devs.vercel.app/arquitectura)
-- [JSON Explorer](https://tp-2-rde-devs.vercel.app/json)
-- [API](https://tp-2-rde-devs.vercel.app/api)
-- [Galería](https://tp-2-rde-devs.vercel.app/galeria)
+📁 [Drive con evidencias de uso de IA](https://drive.google.com/drive/u/0/folders/1LkVf6MaKqQdCl31vkxWRx3Na0RNildve)
 
 ---
 
-🎯 Conclusión
+## 🎯 Conclusión
 
-El TP2 permitió transformar un proyecto desarrollado con tecnologías web tradicionales en una aplicación React moderna basada en componentes reutilizables.
-
-La migración incorporó nuevas funcionalidades, mejoró la organización del código y permitió aplicar conceptos fundamentales de desarrollo frontend moderno como React Router, Hooks, SPA y reutilización de componentes.
+El TP2 transformó un proyecto estático multipágina en una aplicación React moderna. La migración permitió aplicar conceptos fundamentales de frontend moderno: **componentización**, **React Router**, **Hooks**, **consumo de APIs** y **SPA**, logrando un código más organizado, reutilizable y escalable.
 
