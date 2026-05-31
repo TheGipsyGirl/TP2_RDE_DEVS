@@ -1,6 +1,8 @@
 .agustina-page {
-  color: #f3f3f3;
+  color: #ffffff;
 }
+
+/* HERO */
 
 .agustina-hero {
   display: grid;
@@ -8,7 +10,7 @@
   gap: 3rem;
   align-items: center;
   margin-bottom: 4rem;
-  background: linear-gradient(135deg, #151515, #262630);
+  background: linear-gradient(135deg, #151515, #24332b);
   padding: 3rem;
   border-radius: 2rem;
   position: relative;
@@ -21,13 +23,13 @@
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
-  background: rgba(255, 77, 181, 0.18);
+  background: rgba(35, 196, 78, 0.18);
   right: -5rem;
   top: -5rem;
 }
 
 .agus-label {
-  color: #ff4db5;
+  color: #23c44e;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
@@ -38,15 +40,16 @@
   font-size: clamp(2.5rem, 6vw, 4.8rem);
   line-height: 1;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .agustina-texto h1 span {
-  color: #ff4db5;
+  color: #23c44e;
 }
 
 .agustina-texto p {
   max-width: 760px;
-  color: #ccccd6;
+  color: #d9e0dc;
   line-height: 1.8;
   margin-bottom: 2rem;
 }
@@ -59,9 +62,11 @@
 .agustina-avatar img {
   width: 100%;
   border-radius: 50%;
-  border: 5px solid #ff4db5;
-  box-shadow: 0 0 45px rgba(255, 77, 181, 0.25);
+  border: 5px solid #23c44e;
+  box-shadow: 0 0 45px rgba(35, 196, 78, 0.25);
 }
+
+/* BOTONES REDES */
 
 .agus-socials {
   display: flex;
@@ -73,47 +78,49 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #111118;
-  color: #f3f3f3;
+  background: #24332b;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.8rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 77, 181, 0.35);
+  border: 1px solid rgba(35, 196, 78, 0.35);
   transition: 0.3s ease;
 }
 
 .agus-socials a:hover {
-  background: #ff4db5;
+  background: #23c44e;
   color: #151515;
   transform: translateY(-5px);
 }
 
+/* SECCIONES */
+
 .agus-card,
 .agus-section,
 .agus-contacto {
-  background: #16161f;
+  background: #24332b;
   padding: 2rem;
   border-radius: 2rem;
   margin-bottom: 3rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
-  border: 1px solid #242438;
+  border: 1px solid rgba(35, 196, 78, 0.15);
 }
 
 .agus-card h2,
 .agus-section h2,
 .agus-contacto h2 {
-  color: #ff4db5;
+  color: #23c44e;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
 .agus-card p,
 .agus-contacto p {
-  color: #ccccd6;
+  color: #d9e0dc;
   line-height: 1.8;
 }
 
-/* ICONS */
+/* ICONOS */
 
 .agus-icons {
   display: flex;
@@ -123,12 +130,12 @@
 
 .agus-icons svg {
   font-size: 4rem;
-  color: #f3f3f3;
+  color: #ffffff;
   transition: 0.3s ease;
 }
 
 .agus-icons svg:hover {
-  color: #ff4db5;
+  color: #23c44e;
   transform: translateY(-8px) rotate(-5deg);
 }
 
@@ -144,20 +151,20 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.4rem;
-  color: #f3f3f3;
+  color: #ffffff;
   font-weight: 700;
 }
 
 .agus-barra-track {
   height: 10px;
-  background: #262630;
+  background: #151515;
   border-radius: 999px;
   overflow: hidden;
 }
 
 .agus-barra-fill {
   height: 100%;
-  background: linear-gradient(90deg, #ff4db5, #ff8fd4);
+  background: linear-gradient(90deg, #23c44e, #6ee68d);
   border-radius: 999px;
   transition: width 1.2s ease;
 }
@@ -177,40 +184,46 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background: #ff4db5;
+  background: #23c44e;
   color: #151515;
   font-size: 1.4rem;
   font-weight: 800;
+  transition: 0.3s ease;
+}
+
+.agus-carrusel button:hover {
+  transform: scale(1.1);
 }
 
 .agus-carrusel article {
-  background: #111118;
+  background: #151515;
   padding: 2rem;
   border-radius: 1.4rem;
-  border: 1px solid #242438;
+  border: 1px solid rgba(35, 196, 78, 0.2);
 }
 
 .agus-carrusel article span {
-  color: #ff4db5;
+  color: #23c44e;
   font-weight: 800;
 }
 
 .agus-carrusel article h3 {
   margin: 0.7rem 0;
+  color: #ffffff;
 }
 
 .agus-carrusel article p {
-  color: #ccccd6;
+  color: #d9e0dc;
   line-height: 1.6;
 }
 
 .agus-contador {
   text-align: center;
   margin-top: 1rem;
-  color: #aaa;
+  color: #b5b5b5;
 }
 
-/* MEDIA */
+/* GALERÍA */
 
 .agus-grid {
   display: grid;
@@ -219,16 +232,17 @@
 }
 
 .agus-media {
-  background: #111118;
+  background: #151515;
   border-radius: 1.4rem;
   overflow: hidden;
-  border: 1px solid #242438;
+  border: 1px solid rgba(35, 196, 78, 0.15);
   transition: 0.3s ease;
 }
 
 .agus-media:hover {
   transform: translateY(-8px);
-  border-color: rgba(255, 77, 181, 0.55);
+  border-color: #23c44e;
+  box-shadow: 0 10px 25px rgba(35, 196, 78, 0.15);
 }
 
 .agus-media img {
@@ -242,16 +256,17 @@
 }
 
 .agus-media span {
-  color: #ff4db5;
+  color: #23c44e;
   font-weight: 800;
 }
 
 .agus-media h3 {
   margin: 0.4rem 0;
+  color: #ffffff;
 }
 
 .agus-media p {
-  color: #ccccd6;
+  color: #d9e0dc;
   line-height: 1.5;
 }
 
