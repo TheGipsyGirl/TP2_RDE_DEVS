@@ -1,4 +1,4 @@
- RDE Devs – TP2 React
+ # 🚀 RDE Devs – TP2 React
 
  🌐 Proyecto Desplegado
 
@@ -7,8 +7,8 @@
 🔗 **Repositorio GitHub:** https://github.com/TheGipsyGirl/TP2_RDE_DEVS.git
 
 ---
-
- 📄 Descripción del Proyecto
+ 
+ ## 📄 Descripción del Proyecto
 
 RDE Devs es la evolución del Trabajo Práctico 1 de Desarrollo Web. El proyecto consistió en migrar el sitio grupal desarrollado originalmente con HTML, CSS y JavaScript hacia una aplicación React basada en componentes reutilizables y navegación mediante React Router.
 
