@@ -135,10 +135,9 @@ Toda la navegación del sitio utiliza **React Router DOM v6** con rutas anidadas
  Home Dashboard 
 Pantalla principal que centraliza el acceso a todas las secciones del proyecto.
 
-![Pantalla Principal](./docs/screenshots/inicio - 01.png)
+![Pantalla Principal](./docs/screenshots/inicio-01.png)
 
-!(./docs/screenshots/inicio - 02.png)
-
+![Pantalla Principal](./docs/screenshots/inicio-02.png)
 
 ```
 / (Home)
