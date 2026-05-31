@@ -2,7 +2,7 @@
 
  🌐 Proyecto Desplegado
 
-🔗 **Vercel:** 
+🔗 **Vercel:** https://tp-2-rde-devs.vercel.app/
 
 🔗 **Repositorio GitHub:** https://github.com/TheGipsyGirl/TP2_RDE_DEVS.git
 
@@ -183,9 +183,14 @@ Las herramientas de Inteligencia Artificial fueron utilizadas como asistentes de
 
 ---
 
-📋 Bitácora
+# 🔗 Navegación principal
 
-La documentación completa del proceso de desarrollo se encuentra disponible dentro de la sección Bitácora de la aplicación.
+- [Home](https://tp-2-rde-devs.vercel.app/)
+- [Bitácora](https://tp-2-rde-devs.vercel.app/bitacora)
+- [Arquitectura](https://tp-2-rde-devs.vercel.app/arquitectura)
+- [JSON Explorer](https://tp-2-rde-devs.vercel.app/json)
+- [API](https://tp-2-rde-devs.vercel.app/api)
+- [Galería](https://tp-2-rde-devs.vercel.app/galeria)
 
 ---
 
