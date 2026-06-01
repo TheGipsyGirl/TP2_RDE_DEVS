@@ -332,5 +332,9 @@ Las herramientas de Inteligencia Artificial fueron utilizadas como asistentes de
 
 ## 🎯 Conclusión
 
-El TP2 transformó un proyecto estático multipágina en una aplicación React moderna. La migración permitió aplicar conceptos fundamentales de frontend moderno: **componentización**, **React Router**, **Hooks**, **consumo de APIs** y **SPA**, logrando un código más organizado, reutilizable y escalable.
-
+El TP2 representó un salto cualitativo importante respecto al TP1. Lo que antes era un conjunto de archivos HTML independientes, cada uno con su propio CSS y JavaScript suelto, se transformó en una aplicación React moderna con arquitectura SPA.
+La migración no fue solo un cambio de tecnología, sino una reorganización completa de cómo se piensa el proyecto. En el TP1 cada página existía de forma aislada; en el TP2 todo convive dentro de un mismo árbol de componentes donde el Layout es persistente, el Sidebar siempre está presente, y cada ruta renderiza su contenido dentro del Outlet sin recargar la página.
+A nivel de código, el cambio más significativo fue pasar del JavaScript tradicional manipulando el DOM a trabajar con React Hooks. El useState reemplazó las variables globales, el useEffect ordenó los efectos secundarios como el consumo de la API de TMDB, y el useMemo optimizó el filtrado en tiempo real del JSON Explorer. El useCallback estabilizó las funciones de navegación del Lightbox, algo que en JavaScript puro hubiera requerido mucho más código manual.
+En cuanto a las funcionalidades, el TP2 incorporó cosas que el TP1 no tenía: una galería con Lightbox interactivo con zoom y navegación por teclado, un explorador de datos con búsqueda y filtros simultáneos, y una integración real con una API externa con manejo de estados de carga, error y paginación.
+El trabajo colaborativo también evolucionó: se trabajó con ramas individuales por integrante en Git, lo que implicó resolver conflictos de merge reales y mantener un historial de cambios ordenado.
+En definitiva, el TP2 no solo sumó funcionalidades, sino que cambió la forma de construir y pensar el código.
