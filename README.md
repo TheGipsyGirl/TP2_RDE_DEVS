@@ -165,7 +165,11 @@ Consume la **API de The Movie Database (TMDB)** para mostrar películas populare
 - Estados de loading, error y datos
 - Paginación controlada con botones Anterior / Siguiente e input numérico directo
 
-> 📸 *Agregar captura de pantalla de la página de API aquí*
+![Api](./docs/screenshots/api-01.png)
+
+![Api](./docs/screenshots/api-02.png)
+
+![Api](./docs/screenshots/api-03.png)
 
 ---
 
@@ -199,7 +203,17 @@ Galería interactiva con 15 imágenes, filtro por categorías y visualización e
 - Componente `Lightbox` con zoom (`+` / `-`), drag para mover imagen ampliada, navegación con teclado (← →) y cierre con `ESC`
 - `useCallback` para estabilizar las funciones de navegación
 
-> 📸 *Agregar captura de pantalla de la galería y del lightbox aquí*
+![Galeria](./docs/screenshots/galeria-01.png)
+
+![Galeria](./docs/screenshots/galeria-02.png)
+
+![Galeria](./docs/screenshots/galeria-03.png)
+
+![Galeria](./docs/screenshots/galeria-04.png)
+
+![Galeria](./docs/screenshots/galeria-05.png)
+
+![Galeria](./docs/screenshots/galeria-06.png)
 
 ---
 
@@ -207,7 +221,13 @@ Galería interactiva con 15 imágenes, filtro por categorías y visualización e
 
 Cada integrante cuenta con su propia página personalizada construida en React, con secciones de presentación, habilidades, proyectos e intereses.
 
-> 📸 *Agregar capturas de cada perfil aquí*
+![Perfil Vale](./docs/screenshots/valeria-01.png)
+
+![Perfil Agus](./docs/screenshots/agus.png)
+
+![Perfil Matias](./docs/screenshots/Matias.png)
+
+![Perfil Luis](./docs/screenshots/Luis.png)
 
 ---
 
@@ -215,9 +235,16 @@ Cada integrante cuenta con su propia página personalizada construida en React, 
 
 Registro del proceso de migración y desarrollo del proyecto.
 
+![Bitacora](./docs/screenshots/bitacora-01.png)
+
+![Bitacora](./docs/screenshots/bitacora-02.png)
+
+
 ### 7. Arquitectura
 
 Representación visual del árbol de renderizado y documentación técnica de la migración.
+
+![Arquitectura](./docs/screenshots/arquitectura-01.png)
 
 ---
 
